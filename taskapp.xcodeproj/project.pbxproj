@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		FDB156B7255A44B100A42DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDB156B6255A44B100A42DEE /* Assets.xcassets */; };
 		FDB156BA255A44B100A42DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDB156B8255A44B100A42DEE /* LaunchScreen.storyboard */; };
 		FDB156C2255B9E7B00A42DEE /* InputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB156C1255B9E7B00A42DEE /* InputViewController.swift */; };
+		FDB156CE255D771900A42DEE /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB156CD255D771900A42DEE /* Task.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		FDB156B9255A44B100A42DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FDB156BB255A44B100A42DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FDB156C1255B9E7B00A42DEE /* InputViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputViewController.swift; sourceTree = "<group>"; };
+		FDB156CD255D771900A42DEE /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				A98991A1008AB7CFA897A618 /* Pods-taskapp.debug.xcconfig */,
 				49891EC3B71D507B073DD7AB /* Pods-taskapp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -91,6 +92,7 @@
 				FDB156B6255A44B100A42DEE /* Assets.xcassets */,
 				FDB156B8255A44B100A42DEE /* LaunchScreen.storyboard */,
 				FDB156BB255A44B100A42DEE /* Info.plist */,
+				FDB156CD255D771900A42DEE /* Task.swift */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -212,6 +214,7 @@
 			files = (
 				FDB156B2255A44AD00A42DEE /* ViewController.swift in Sources */,
 				FDB156AE255A44AD00A42DEE /* AppDelegate.swift in Sources */,
+				FDB156CE255D771900A42DEE /* Task.swift in Sources */,
 				FDB156B0255A44AD00A42DEE /* SceneDelegate.swift in Sources */,
 				FDB156C2255B9E7B00A42DEE /* InputViewController.swift in Sources */,
 			);
