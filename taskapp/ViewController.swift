@@ -35,6 +35,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //何も入力されていなくてもReturnキーを押せるようにする。
         testSearchBar.enablesReturnKeyAutomatically = false
         
+        tableView.register(UINib(nibName: "categorycell", bundle: nil),forCellReuseIdentifier:"TableViewcategorycell")
+        
     }
     //検索ボタン押下時の呼び出しメソッド
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
@@ -60,9 +62,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.reloadData()
     }
     
-    
-    
-    
     // データの数（＝セルの数）を返すメソッド
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return taskArray.count
@@ -71,20 +70,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 再利用可能な cell を得る
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewcategorycell", for: indexPath) as! categorycell
         
         // Cellに値を設定する.  --- ここから ---
-        var task = taskArray[indexPath.row]
-        cell.textLabel?.text = task.title
-        
-        task = taskArray[indexPath.row]
-        cell.textLabel?.text = task.category
+        let task = taskArray[indexPath.row]
+        cell.taitol.text = task.title
+        cell.categori.text = task.category
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
         let dateString:String = formatter.string(from: task.date)
-        cell.detailTextLabel?.text = dateString
+        cell.nitizi.text = dateString
         
         return cell
     }
@@ -101,14 +98,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     // Delete ボタンが押された時に呼ばれるメソッド
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        
-        if editingStyle == .delete {
-             // データベースから削除する
-             try! realm.write {
-                 self.realm.delete(self.taskArray[indexPath.row])
-                 tableView.deleteRows(at: [indexPath], with: .fade)
-             }
-         }
         
         // --- ここから ---
         if editingStyle == .delete {
@@ -162,7 +151,5 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         super.viewWillAppear(animated)
         tableView.reloadData()
     }
-    
-    
+        
 }
-
