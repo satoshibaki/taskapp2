@@ -92,7 +92,7 @@
                                     <constraint firstAttribute="height" constant="120" id="RRg-o4-9uE"/>
                                 </constraints>
                             </datePicker>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-G3-1b3">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="カテゴリ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IPn-G3-1b3" userLabel="カテゴリ追加">
                                 <rect key="frame" x="10" y="464" width="355" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -143,7 +143,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VhY-wT-qx8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1784" y="98"/>
+            <point key="canvasLocation" x="1783.2" y="97.536945812807886"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="glf-MI-wP4">
@@ -165,6 +165,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="h33-QX-zYJ"/>
+        <segue reference="qDd-C9-HtL"/>
     </inferredMetricsTieBreakers>
 </document>

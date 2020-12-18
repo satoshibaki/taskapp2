@@ -8,14 +8,14 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewcategorycell" id="N8d-RK-b6D" userLabel="categorycell" customClass="categorycell" customModule="taskapp" customModuleProvider="target">
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskInfoCategoryCell" id="N8d-RK-b6D" userLabel="TaskInfoCell" customClass="TaskInfoCell" customModule="taskapp" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="379" height="44"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="N8d-RK-b6D" id="a5v-qR-tP2">
                 <rect key="frame" x="0.0" y="0.0" width="379" height="44"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-Yx-Wkh">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Ze-Yx-Wkh" userLabel="taitolLabel">
                         <rect key="frame" x="38" y="2" width="150" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="150" id="NyE-PJ-DKw"/>
@@ -35,7 +35,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71L-s1-3Fo">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71L-s1-3Fo" userLabel="categoriLabel">
                         <rect key="frame" x="38" y="24" width="150" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="150" id="4jh-Ub-o4l"/>
@@ -57,7 +57,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-Lv-Dk7">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4u8-Lv-Dk7" userLabel="nichiziLabel">
                         <rect key="frame" x="220" y="24" width="150" height="20"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="JiZ-4R-hcW"/>
@@ -110,9 +110,9 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="categori" destination="71L-s1-3Fo" id="9cx-pS-3wu"/>
-                <outlet property="nitizi" destination="4u8-Lv-Dk7" id="esb-LL-y4l"/>
-                <outlet property="taitol" destination="3Ze-Yx-Wkh" id="4Mm-uF-5RB"/>
+                <outlet property="categoriLabel" destination="71L-s1-3Fo" id="Q3J-dd-2QQ"/>
+                <outlet property="nichiziLabel" destination="4u8-Lv-Dk7" id="puJ-Fl-IMF"/>
+                <outlet property="taitolLabel" destination="3Ze-Yx-Wkh" id="tVQ-ta-cnP"/>
             </connections>
             <point key="canvasLocation" x="-267.39130434782612" y="57.589285714285708"/>
         </tableViewCell>

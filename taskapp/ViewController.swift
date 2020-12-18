@@ -35,7 +35,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         //何も入力されていなくてもReturnキーを押せるようにする。
         testSearchBar.enablesReturnKeyAutomatically = false
         
-        tableView.register(UINib(nibName: "categorycell", bundle: nil),forCellReuseIdentifier:"TableViewcategorycell")
+        tableView.register(UINib(nibName: "TaskInfoCell", bundle: nil),forCellReuseIdentifier:"TaskInfoCategoryCell")
         
     }
     //検索ボタン押下時の呼び出しメソッド
@@ -70,18 +70,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     // 各セルの内容を返すメソッド
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         // 再利用可能な cell を得る
-        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewcategorycell", for: indexPath) as! categorycell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TaskInfoCategoryCell", for: indexPath) as! TaskInfoCell
         
         // Cellに値を設定する.  --- ここから ---
         let task = taskArray[indexPath.row]
-        cell.taitol.text = task.title
-        cell.categori.text = task.category
+        cell.taitolLabel.text = task.title
+        cell.categoriLabel.text = task.category
         
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm"
         
         let dateString:String = formatter.string(from: task.date)
-        cell.nitizi.text = dateString
+        cell.nichiziLabel.text = dateString
         
         return cell
     }

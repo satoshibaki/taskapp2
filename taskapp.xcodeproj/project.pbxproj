@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7A34D6C3B7583F9883F87703 /* Pods_taskapp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C86BED2455C04B6D195D1F1 /* Pods_taskapp.framework */; };
-		FD22FE772582488500EB9FE4 /* categorycell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22FE752582488500EB9FE4 /* categorycell.swift */; };
-		FD22FE782582488500EB9FE4 /* categorycell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD22FE762582488500EB9FE4 /* categorycell.xib */; };
+		FD22FE772582488500EB9FE4 /* TaskInfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD22FE752582488500EB9FE4 /* TaskInfoCell.swift */; };
+		FD22FE782582488500EB9FE4 /* TaskInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FD22FE762582488500EB9FE4 /* TaskInfoCell.xib */; };
 		FDB156AE255A44AD00A42DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB156AD255A44AD00A42DEE /* AppDelegate.swift */; };
 		FDB156B0255A44AD00A42DEE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB156AF255A44AD00A42DEE /* SceneDelegate.swift */; };
 		FDB156B2255A44AD00A42DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDB156B1255A44AD00A42DEE /* ViewController.swift */; };
@@ -24,8 +24,8 @@
 		49891EC3B71D507B073DD7AB /* Pods-taskapp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.release.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.release.xcconfig"; sourceTree = "<group>"; };
 		8C86BED2455C04B6D195D1F1 /* Pods_taskapp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_taskapp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98991A1008AB7CFA897A618 /* Pods-taskapp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-taskapp.debug.xcconfig"; path = "Target Support Files/Pods-taskapp/Pods-taskapp.debug.xcconfig"; sourceTree = "<group>"; };
-		FD22FE752582488500EB9FE4 /* categorycell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = categorycell.swift; sourceTree = "<group>"; };
-		FD22FE762582488500EB9FE4 /* categorycell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = categorycell.xib; sourceTree = "<group>"; };
+		FD22FE752582488500EB9FE4 /* TaskInfoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskInfoCell.swift; sourceTree = "<group>"; };
+		FD22FE762582488500EB9FE4 /* TaskInfoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskInfoCell.xib; sourceTree = "<group>"; };
 		FDB156AA255A44AD00A42DEE /* taskapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taskapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDB156AD255A44AD00A42DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FDB156AF255A44AD00A42DEE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -97,8 +97,8 @@
 				FDB156B8255A44B100A42DEE /* LaunchScreen.storyboard */,
 				FDB156BB255A44B100A42DEE /* Info.plist */,
 				FDB156CD255D771900A42DEE /* Task.swift */,
-				FD22FE752582488500EB9FE4 /* categorycell.swift */,
-				FD22FE762582488500EB9FE4 /* categorycell.xib */,
+				FD22FE752582488500EB9FE4 /* TaskInfoCell.swift */,
+				FD22FE762582488500EB9FE4 /* TaskInfoCell.xib */,
 			);
 			path = taskapp;
 			sourceTree = "<group>";
@@ -166,7 +166,7 @@
 				FDB156BA255A44B100A42DEE /* LaunchScreen.storyboard in Resources */,
 				FDB156B7255A44B100A42DEE /* Assets.xcassets in Resources */,
 				FDB156B5255A44AD00A42DEE /* Main.storyboard in Resources */,
-				FD22FE782582488500EB9FE4 /* categorycell.xib in Resources */,
+				FD22FE782582488500EB9FE4 /* TaskInfoCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FDB156B2255A44AD00A42DEE /* ViewController.swift in Sources */,
-				FD22FE772582488500EB9FE4 /* categorycell.swift in Sources */,
+				FD22FE772582488500EB9FE4 /* TaskInfoCell.swift in Sources */,
 				FDB156AE255A44AD00A42DEE /* AppDelegate.swift in Sources */,
 				FDB156CE255D771900A42DEE /* Task.swift in Sources */,
 				FDB156B0255A44AD00A42DEE /* SceneDelegate.swift in Sources */,
